@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Auldriz</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <center>
+        <a href="../index.html">
+          <img class="logo" src="../images/logo.png" alt="Auldriz Logo"
+        /></a>
+      </center>
+    </header>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+      <input type="text" placeholder="Search.." />
+      <center>
+        <a href="#"><i class="fa fa-fw fa-search"></i></a>
+      </center>
+    </div>
+
+    <center>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+    </center>
+
+    <br />
+
+    <main>
+      <!-- dekho yaha heading daalna  -->
+      <h1 class heading>Jo bhi ho daal dena</h1>
+
+      <!-- yaha pe image daalna uske related  -->
+      <img class="blog-img" src="yaha source daal dena" alt="">
+
+      <!-- yaha pe ek para -->
+      <h2 class="blog-txt">
+
+        <!-- yaha pe image daalna uske related  -->
+      <img class="blog-img" src="yaha source daal dena" alt="">
+
+      <!-- yaha pe ek para -->
+        <h2 class="blog-txt">
+
+
+
+      <!-- yaha pe image daalna uske related  -->
+      <img class="blog-img" src="yaha source daal dena" alt="">
+
+      <!-- yaha pe ek para 
+      -->
+      <h2 class="blog-txt">
+
+      <!-- yaha pe image daalna uske related  -->
+      <img class="blog-img" src="yaha source daal dena" alt="">
+
+      <!-- yaha pe ek para -->
+      <h2 class="blog-txt">
+
+      <!-- yaha pe image daalna uske related  -->
+      <img class="blog-img" src="yaha source daal dena" alt="">
+
+      <!-- yaha blog khatmkar dena -->
+      <h2 class="blog-txt">
+
+      </h2>
+    </main>
+
+    <!-- yaha pe ek comment box bana dunga -->
+    <div class="info">
+        <label for="example">Enter Text
+        </label>
+        <input id="example" type="text"
+               name="Ntext" size="20">
+        <input id="sent" type="submit"  
+               value="Send"> 
+    </div>
+      <p id="para">      
+      </p>
+
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+    <script src="../function.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </body>
+  <script>
+    window.onclick = function(e)
+    {   var id =  e.target.id;   
+     if (id === 'sent')  
+     { var txt = document.getElementById('example').value    
+       $( "#para" ).empty().append( txt );
+     }
+    }
+  </script> 
+</html>
